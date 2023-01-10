@@ -1,0 +1,43 @@
+.hero__section-bg {
+    background: url('../assets/images/fundo2.jpg');
+}
+
+.hero__section{
+    display: flex;
+    flex-direction: row;
+    height: 500px;
+}
+
+.child1 {
+    display: flex;
+    width: 50%;
+    align-items: center;
+    justify-content: center;
+}
+
+.child1 h3{
+    color: #FFF;
+    text-align: center;
+}
+
+.child2 {
+    width: 50%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.child2 h3{
+    color: #FFF;
+    text-align: center;
+}
+
+.btn__more{
+    padding: 10px 20px 10px 20px;
+    font-size: 1.6rem;
+    color: #FFF;
+    border: none;
+    background-color: #00637d;
+    border-radius: 10px;
+}
