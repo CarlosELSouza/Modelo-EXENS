@@ -1,15 +1,22 @@
-import React from 'react'
+import React, {useEffect} from 'react'
 import '../styles/home.css'
 import exens from '../../src/assets/images/EXENS-3.png'
 import { motion } from 'framer-motion'
 import { Link } from 'react-scroll'
-import pc from '../../src/assets/images/pc.svg'
+import AOS from 'aos';
+import 'aos/dist/aos.css';
+// import pc from '../../src/assets/images/pc.svg'
 import exensvazado from '../../src/assets/images/exens-vaz.png'
 
 const Home = () => {
+  useEffect(() => {
+    AOS.init();
+  }, [])
   return (
   <section className='hero__section-bg'>
+
     <div className="hero__section">
+
       <motion.div
         className="child1"
         initial={{ x: -500 }}
@@ -34,7 +41,8 @@ const Home = () => {
         </motion.div>
       </div>
     </div>
-    <div className="about">
+
+    <div className="about" data-aos="fade-right">
       <motion.div
         className="child1-about"
         initial={{ x: -500 }}
@@ -54,6 +62,27 @@ const Home = () => {
           <img src={exensvazado} alt="" />
         </motion.div>
       </div>
+    </div>
+
+    <div className="about__details">
+      <div className="item"  data-aos="fade-right">
+        <i className="ri-building-line"></i>
+        <h2>Pioneirismo</h2>
+        <h4>Uma das primeiras empresas de Franca-SP a ter um emissor de NFe.</h4>
+      </div>
+      <div className="item"  data-aos="fade-up">
+        <i className="ri-macbook-line"></i>
+        <h2>Multiplataforma</h2>
+        <h4>Desde aplicativo web até aplicativo Offline para vendas.</h4>
+      </div>
+      <div className="item"  data-aos="fade-left">
+        <i className="ri-global-line"></i>
+        <h2>Sempre Atualizado</h2>
+        <h4>Nossa equipe está constantemente trabalhando em melhorias para o ecosistema.</h4>
+      </div>
+    </div>
+    <div className="products__click">
+      <button data-aos="fade-up">Conheça nossos produtos</button>
     </div>
   </section>
   )

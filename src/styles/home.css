@@ -2,11 +2,6 @@
     background: linear-gradient(-45deg, #042c3c, #246f7c, #42b1b3, #8fd3d0);
 	background-size: 400% 400%;
 	animation: gradient 15s ease infinite;
-
-    /* display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column; */
 }
 
 @keyframes gradient {
@@ -56,6 +51,8 @@
 }
 
 .btn__more{
+    background: linear-gradient(-45deg, #0d6a8f, #246f7c, #42b1b3, #8fd3d0);
+    animation: gradient 1s ease infinite;
     margin-top: 10px;
     width: 30%;
     padding: 10px 20px 10px 20px;
@@ -63,7 +60,7 @@
     color: #FFF;
     border: none;
     background-color: #00647d63;
-    border-radius: 10px;
+    border-radius: 30px;
 }
 
 .img-container{
@@ -78,8 +75,8 @@
 }
 
 .about {
-    padding: 0px 20% 0px 20%;
-    height: 50vh;
+    padding: 5% 20% 0 20%;
+    height: 20vh;
     background-color: #042c3c;
     display: flex;
     flex-direction: row;
@@ -120,3 +117,67 @@
     width: 100%;
 
 }
+
+.products__clickh1{
+    font-size: 4rem;
+    color: #FFF;
+}
+
+.products__click{
+    background-color: #042c3c;
+    display: flex;
+    height: 10vh;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.products__click button {
+    background: linear-gradient(-45deg, #0d6a8f, #246f7c, #42b1b3, #8fd3d0);
+    animation: gradient 1s ease infinite;
+    margin: 0px 0px 5% 0px;
+    width: 30%;
+    padding: 10px 20px 10px 20px;
+    font-size: 1.6rem;
+    color: #FFF;
+    border: none;
+    background-color: #00647d63;
+    border-radius: 30px;
+}
+
+.about__details {
+    padding: 5% 20% 5% 20%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    column-gap: 1rem;
+    flex-direction: row;
+    width: 100%;
+    background-color: #042c3c;
+    height: 70vh;
+}
+
+.item {
+    color: #FFF;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    height: 100%;
+    width: 100%;
+    border: 1px solid #246f7c;
+    border-radius: 10px;
+    padding: 0px 2% 10% 2%;
+}
+
+.item h4 {
+    text-align: center;
+    color: gray;
+}
+
+.item i {
+    padding: 0;
+    font-size: 7rem;
+    color: #4a989f;
+}
+
