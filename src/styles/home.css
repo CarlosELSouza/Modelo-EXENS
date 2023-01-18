@@ -1,11 +1,30 @@
 .hero__section-bg {
-    background: url('../assets/images/fundo2.jpg');
+    background: linear-gradient(-45deg, #042c3c, #246f7c, #48c3c5, #8fd3d0);
+	background-size: 400% 400%;
+	animation: gradient 15s ease infinite;
+	height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
+
+
+@keyframes gradient {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+}
+
 
 .hero__section{
     display: flex;
     flex-direction: row;
-    height: 500px;
 }
 
 .child1 {
@@ -13,11 +32,11 @@
     width: 50%;
     align-items: center;
     justify-content: center;
+    flex-direction: column;
 }
 
-.child1 h3{
+.child1 h4{
     color: #FFF;
-    text-align: center;
 }
 
 .child2 {
@@ -28,9 +47,9 @@
     justify-content: center;
 }
 
-.child2 h3{
+.child1 h1{
     color: #FFF;
-    text-align: center;
+
 }
 
 .btn__more{
@@ -38,6 +57,13 @@
     font-size: 1.6rem;
     color: #FFF;
     border: none;
-    background-color: #00637d;
+    background-color: #00647d63;
     border-radius: 10px;
+}
+
+.img-container{
+}
+
+.img-container img {
+    width: 700px;
 }
