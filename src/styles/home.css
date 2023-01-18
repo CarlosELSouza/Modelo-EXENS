@@ -1,13 +1,13 @@
 .hero__section-bg {
-    background: linear-gradient(-45deg, #042c3c, #246f7c, #48c3c5, #8fd3d0);
+    background: linear-gradient(-45deg, #042c3c, #246f7c, #42b1b3, #8fd3d0);
 	background-size: 400% 400%;
 	animation: gradient 15s ease infinite;
-	height: 100vh;
-    display: flex;
+
+    /* display: flex;
     align-items: center;
     justify-content: center;
+    flex-direction: column; */
 }
-
 
 @keyframes gradient {
 	0% {
@@ -23,14 +23,17 @@
 
 
 .hero__section{
+    margin: 0px 20% 0px 20%;
     display: flex;
+    align-items: center;
+    justify-content: center;
     flex-direction: row;
+    height: 900px;
 }
 
 .child1 {
     display: flex;
     width: 50%;
-    align-items: center;
     justify-content: center;
     flex-direction: column;
 }
@@ -53,6 +56,8 @@
 }
 
 .btn__more{
+    margin-top: 10px;
+    width: 30%;
     padding: 10px 20px 10px 20px;
     font-size: 1.6rem;
     color: #FFF;
@@ -66,4 +71,24 @@
 
 .img-container img {
     width: 700px;
+}
+
+.about {
+    background-color: #042c3c;
+    display: flex;
+    flex-direction: row;
+}
+
+.child1-about {
+    display: flex;
+    width: 50%;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.child2-about {
+    display: flex;
+    width: 50%;
+    justify-content: center;
+    flex-direction: column;
 }
