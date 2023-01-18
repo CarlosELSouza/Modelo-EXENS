@@ -5,10 +5,30 @@ import { motion } from 'framer-motion'
 import { Link } from 'react-scroll'
 import AOS from 'aos';
 import 'aos/dist/aos.css';
-// import pc from '../../src/assets/images/pc.svg'
 import exensvazado from '../../src/assets/images/exens-vaz.png'
+import Card from '../components/UI/Card'
 
 const Home = () => {
+
+  const filters = [
+    {
+       name: 'Pistolas',
+     },
+     {
+        name: 'Revólver',
+     },
+     {
+      name: 'Revólver',
+   },
+   {
+    name: 'Revólver',
+ },
+ {
+  name: 'Revólver',
+},
+    
+ ]
+
   useEffect(() => {
     AOS.init();
   }, [])
@@ -88,21 +108,11 @@ const Home = () => {
     </div>
     <div className="our__products">
       <div className="card__container">
-        <div className="card__item">
-          <p>1</p>
-        </div>
-        <div className="card__item">
-          <p>2</p>
-        </div>
-        <div className="card__item">
-          <p>3</p>
-        </div>
-        <div className="card__item">
-          <p>4</p>
-        </div>
-        <div className="card__item">
-          <p>5</p>
-        </div>
+        {filters.map((item) => (
+          <div className="card__item">
+            <Card props={item.name}/>
+          </div>
+        ))}
       </div>
     </div>
   </section>
