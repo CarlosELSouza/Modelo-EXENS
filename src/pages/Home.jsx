@@ -110,7 +110,7 @@ const Home = () => {
       <div className="card__container">
         {filters.map((item) => (
           <div className="card__item">
-            <Card props={item.name}/>
+            <Card props={item}/>
           </div>
         ))}
       </div>
