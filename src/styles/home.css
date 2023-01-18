@@ -188,13 +188,21 @@
 }
 
 .our__products {
-    padding: 5% 20% 5% 20%;
+    display: flex;
+    padding: 5% 10% 5% 10%;
     height: 100vh;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
 }
 
 .card__container{
+    width: 100%;
     display: flex;
     flex-direction: row;
+    column-gap: 2rem;
+    align-items: center;
+    justify-content: center;
 }
 
 .card__item {
