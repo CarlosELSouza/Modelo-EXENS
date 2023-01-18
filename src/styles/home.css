@@ -23,12 +23,12 @@
 
 
 .hero__section{
-    margin: 0px 20% 0px 20%;
+    margin: 0px 10% 0px 10%;
     display: flex;
     align-items: center;
     justify-content: center;
     flex-direction: row;
-    height: 900px;
+    height: 100vh;
 }
 
 .child1 {
@@ -67,13 +67,19 @@
 }
 
 .img-container{
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-end;
 }
 
 .img-container img {
-    width: 700px;
+    width: 900px;
+
 }
 
 .about {
+    padding: 0px 20% 0px 20%;
+    height: 50vh;
     background-color: #042c3c;
     display: flex;
     flex-direction: row;
@@ -81,14 +87,36 @@
 
 .child1-about {
     display: flex;
-    width: 50%;
+    width: 70%;
     justify-content: center;
     flex-direction: column;
 }
 
+.child1-about h1 {
+    font-size: 4rem;
+    color: #FFF;
+}
+
+.child-about p{
+    color: #FFF;
+
+}
+
 .child2-about {
     display: flex;
-    width: 50%;
+    width: 30%;
     justify-content: center;
     flex-direction: column;
+}
+
+.img-container-about{
+    margin: 10%;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+}
+
+.img-container-about img {
+    width: 100%;
+
 }
