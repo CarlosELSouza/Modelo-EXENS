@@ -52,7 +52,6 @@
 
 .btn__more{
     background: linear-gradient(-45deg, #0d6a8f, #246f7c, #42b1b3, #8fd3d0);
-    animation: gradient 1s ease infinite;
     margin-top: 10px;
     width: 30%;
     padding: 10px 20px 10px 20px;
@@ -71,7 +70,6 @@
 
 .img-container img {
     width: 900px;
-
 }
 
 .about {
@@ -132,6 +130,13 @@
     flex-direction: column;
 }
 
+.products__click a {
+    width: 100%;
+    display: flex;
+    align-self: center;
+    justify-content: center;
+}
+
 .products__click button {
     background: linear-gradient(-45deg, #0d6a8f, #246f7c, #42b1b3, #8fd3d0);
     animation: gradient 1s ease infinite;
@@ -144,6 +149,7 @@
     background-color: #00647d63;
     border-radius: 30px;
 }
+
 
 .about__details {
     padding: 5% 20% 5% 20%;
@@ -179,5 +185,28 @@
     padding: 0;
     font-size: 7rem;
     color: #4a989f;
+}
+
+.our__products {
+    padding: 5% 20% 5% 20%;
+    height: 100vh;
+}
+
+.card__container{
+    display: flex;
+    flex-direction: row;
+}
+
+.card__item {
+    color: #FFF;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    height: 100%;
+    width: 100%;
+    border: 1px solid #246f7c;
+    border-radius: 10px;
+    padding: 0px 2% 10% 2%;
 }
 
