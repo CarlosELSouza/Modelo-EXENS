@@ -8,15 +8,15 @@ const nav__links = [
       display: 'Home',
     },
     {
-      path: '/guns',
+      path: '/about',
       display: 'Quem somos',
     },
     {
-      path: '/guns',
+      path: '/products',
       display: 'Produtos',
     },
     {
-      path: '/guns',
+      path: '/downloads',
       display: 'Downloads',
     },
 ]
