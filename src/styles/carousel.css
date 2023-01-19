@@ -63,7 +63,7 @@
 .card__child-1 {
     margin: 10px;
     padding: 10px;
-    box-shadow: 10px 10px 0px 0px rgba(0, 0, 0, 0.222);
+    box-shadow: 10px 10px 0px 0px rgba(0, 0, 0, 0.375);
     /* border: 3px solid #246f7c; */
     font-size: 2rem;
     text-align: center;
