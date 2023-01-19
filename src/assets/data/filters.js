@@ -1,12 +1,13 @@
 import erpImg from '../images/exens-sombra.png'
 // import erp from '../images/erp.svg'
+import erp from '../images/ERP.png'
 
 const filters = [
     {
     id: 1,
     name: 'ERP Gerencial',
     description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus vitae est a leo gravida tristique. In et augue metus. Donec congue lacus quis leo facilisis, ut condimentum orci hendrerit. Cras fringilla ligula felis. Nullam nisi sem, ultricies vel varius a, posuere quis lacus.  ',
-    img: erpImg,
+    img: erp,
     },
     {
     id: 2,

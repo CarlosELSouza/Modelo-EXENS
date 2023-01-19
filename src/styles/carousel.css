@@ -12,11 +12,12 @@
 }
 
 .card__image {
+    /* margin: 10px;
+    padding: 10%; */
     display: flex;
     align-items: center;
     justify-content: center;
-    
-    
+    /* box-shadow: 10px 10px 0px 0px rgba(0, 0, 0, 0.222); */
     border-radius: 20px;
     width: 50%;
 }
@@ -60,12 +61,16 @@
 }
 
 .card__child-1 {
+    margin: 10px;
+    padding: 10px;
+    box-shadow: 10px 10px 0px 0px rgba(0, 0, 0, 0.222);
     /* border: 3px solid #246f7c; */
     font-size: 2rem;
     text-align: center;
     border-radius: 20px;
     width: 50%;
-    color: #fff;
+    color: rgb(255, 255, 255);
+    background: linear-gradient(-45deg, #0d6a8f15, #246f7c, #42b1b382, #8fd3ce34);
 }
 
 .card__child-2 {

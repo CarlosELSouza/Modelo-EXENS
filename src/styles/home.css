@@ -78,6 +78,10 @@
     flex-direction: row;
 }
 
+.about p {
+    font-size: 1.2rem;
+}
+
 .child1-about {
     display: flex;
     width: 70%;
@@ -195,7 +199,7 @@
 }
 
 .card__carousel {
-    width: 80%;
+    width: 100%;
 }
 
 
