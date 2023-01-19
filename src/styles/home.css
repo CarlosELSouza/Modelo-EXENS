@@ -1,7 +1,8 @@
 .hero__section-bg {
-    background: linear-gradient(-45deg, #042c3c, #246f7c, #42b1b3, #8fd3d0);
+    /* background: linear-gradient(-45deg, #042c3c, #246f7c, #42b1b3, #8fd3d0); */
+    background: linear-gradient(-45deg, #042c3c, #0c2529, #42b1b3bc, #071521);
 	background-size: 400% 400%;
-	animation: gradient 15s ease infinite;
+	animation: gradient 10s ease;
 }
 
 @keyframes gradient {
@@ -11,9 +12,7 @@
 	50% {
 		background-position: 100% 50%;
 	}
-	100% {
-		background-position: 0% 50%;
-	}
+	
 }
 
 
@@ -196,25 +195,8 @@
     justify-content: center;
 }
 
-.card__container{
-    width: 100%;
-    display: flex;
-    flex-direction: row;
-    column-gap: 2rem;
-    align-items: center;
-    justify-content: center;
+.card__carousel {
+    width: 80%;
 }
 
-.card__item {
-    color: #FFF;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-    height: 100%;
-    width: 100%;
-    border: 1px solid #246f7c;
-    border-radius: 10px;
-    padding: 0px 2% 10% 2%;
-}
 

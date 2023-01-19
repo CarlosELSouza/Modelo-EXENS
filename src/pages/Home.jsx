@@ -6,28 +6,10 @@ import { Link } from 'react-scroll'
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 import exensvazado from '../../src/assets/images/exens-vaz.png'
-import Card from '../components/UI/Card'
+import filters from '../assets/data/filters'
+import Carousels from '../components/UI/Carousels'
 
 const Home = () => {
-
-  const filters = [
-    {
-       name: 'Pistolas',
-     },
-     {
-        name: 'Revólver',
-     },
-     {
-      name: 'Revólver',
-   },
-   {
-    name: 'Revólver',
- },
- {
-  name: 'Revólver',
-},
-    
- ]
 
   useEffect(() => {
     AOS.init();
@@ -106,14 +88,10 @@ const Home = () => {
         </Link>
       </div>
     </div>
-    <div className="our__products">
-      <div className="card__container">
-        {filters.map((item) => (
-          <div className="card__item">
-            <Card props={item}/>
-          </div>
-        ))}
-      </div>
+    <div className="our__products" data-aos="fade" data-aos-duration="3000">
+        <div className="card__carousel">
+          <Carousels props={filters}/>
+        </div>
     </div>
   </section>
   )
