@@ -1,6 +1,6 @@
 .hero__section-bg {
     /* background: linear-gradient(-45deg, #042c3c, #246f7c, #42b1b3, #8fd3d0); */
-    background: linear-gradient(-45deg, #042c3c, #0c2529, #42b1b3bc, #071521);
+    background: linear-gradient(-45deg, #042c3c, #0c2529, #1b4f50bc, #071521);
 	background-size: 400% 400%;
 	animation: gradient 10s ease;
 }
@@ -9,9 +9,7 @@
 	0% {
 		background-position: 0% 50%;
 	}
-	50% {
-		background-position: 100% 50%;
-	}
+	
 	
 }
 
